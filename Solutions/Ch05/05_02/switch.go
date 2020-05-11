@@ -9,8 +9,8 @@ import (
 func main() {
 
 	rand.Seed(time.Now().Unix())
-	// dow := rand.Intn(6) + 1
-	// fmt.Println("Day", dow)
+	//dow := rand.Intn(6) + 1
+	//fmt.Println("Day", dow)
 	result := ""
 	
 	switch dow := rand.Intn(6) + 1; dow {
@@ -27,7 +27,7 @@ func main() {
 	switch {
 		case x < 0:
 			result = "Less than zero"
-//			fallthrough
+			//fallthrough
 		case x == 0:
 			result = "Equal to zero"
 		default:

@@ -36,7 +36,12 @@ func main() {
 	fmt.Println(poodle)
 	
 	animals := []Animal{Dog{}, Cat{}, Cow{}}
+	// here _ is the index, animal is the object at index
 	for _, animal := range animals {
 		fmt.Println(animal.Speak())
+	}
+	//alternative
+	for animal := range animals {
+		fmt.Println(animals[animal].Speak())
 	}
 }
