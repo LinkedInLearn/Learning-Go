@@ -18,12 +18,20 @@ func main() {
 	myError := errors.New("My error string")
 	fmt.Println(myError)
 
+
 	attendance := map[string]bool{
 		"Ann": true,
 		"Mike": true}
-	attended, ok := attendance["M"]
+
+	//altenative to defining attendance
+	//attendance := map[string]bool{}
+	//attendance["Ann"] = true
+	//attendance["Mike"] = true
+
+	attended, ok := attendance["Mike"]
 	if ok {
 		fmt.Println("Mike attended?", attended)
+		fmt.Println("Mike ok?", ok)
 	} else {
 		fmt.Println("No info for Mike")
 	}
